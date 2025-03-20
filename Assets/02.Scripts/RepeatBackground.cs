@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Timeline;
 
 public class RepeatBackground : MonoBehaviour
 {
@@ -9,13 +10,12 @@ public class RepeatBackground : MonoBehaviour
     void Start()
     {
         startPos = transform.position;
-        repeatWidth = GetComponent<BoxCollider>().size.x/2;
+        repeatWidth = GetComponent<BoxCollider>().size.x / 2;
     }
 
-    
     void Update()
     {
-        if(transform.position.x< startPos.x - repeatWidth)
+        if (transform.position.x < startPos.x - repeatWidth)
         {
             transform.position = startPos;
         }

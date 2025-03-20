@@ -551,6 +551,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3392ea9694ee80544a6ffe266405d07c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isIdle: 1
   obstaclePrefab: {fileID: 6532300093645847992, guid: 70f56c891ee910143938951a4eac900f, type: 3}
 --- !u!4 &901076991
 Transform:
@@ -742,6 +743,10 @@ MonoBehaviour:
   gravityModifier: 7
   isOnGround: 1
   gameOver: 0
+  explosionParticle: {fileID: 0}
+  dirtParticle: {fileID: 0}
+  jumpSound: {fileID: 8300000, guid: 08ab7053d586c458db3774d33c141a4b, type: 3}
+  crashSound: {fileID: 8300000, guid: 913d6445ee8cc4152a9c18da590ee203, type: 3}
 --- !u!65 &2096034976
 BoxCollider:
   m_ObjectHideFlags: 0
